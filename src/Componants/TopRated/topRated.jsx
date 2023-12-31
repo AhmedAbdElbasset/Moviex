@@ -25,8 +25,8 @@ function TopRated(){
                 : topRated.slice(0,8).map(movie=>(
                   <div className="box" key={movie.id}>
                     <div className="detail">
-                    <Link to={`/movieDetalis/${movie.id}`}>Watch Now</Link>
-                    <Link to={`/movieDetalis/${movie.id}`} className='details'>Details</Link>
+                    <Link to={`/Moviex/movieDetalis/${movie.id}`}>Watch Now</Link>
+                    <Link to={`/Moviex/movieDetalis/${movie.id}`} className='details'>Details</Link>
                     <img src={`https://image.tmdb.org/t/p/w500/${movie.backdrop_path}`} />
                     </div>
                     <p className="name">{movie.title}</p>
@@ -37,7 +37,7 @@ function TopRated(){
                     <span className="hd">HD</span>
                   </div>))}
             </div>
-            <Link to={'/movies'}> browse all movies</Link>
+            <Link to={'/Moviex/movies'}> browse all movies</Link>
         </div>
     )
 }

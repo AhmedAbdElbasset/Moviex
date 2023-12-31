@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Movies.css";
-import ReactPaginate from "react-paginate"
-
+const PaginationNum=[1,2,3]
 function MoviesList() {
   const [num, setNum] = useState(0);
   const [movies, setMovies] = useState();
@@ -26,7 +25,7 @@ function MoviesList() {
       <div id="slider" className="List">
         {movies === undefined
           ? ``
-          : movies.map((movie) => (
+          : movies.slice(0,10).map((movie) => (
               <Link
                 to={`/Moviex/movieDetalis/${movie.id}`}
                 className="box"
