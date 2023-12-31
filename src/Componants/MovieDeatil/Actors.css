@@ -1,0 +1,83 @@
+.Actors{
+    width: 100%;
+    height: 400px;
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    left: 20px;
+    top: -58px;
+
+}
+.Actors .actorsList{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+    position: absolute;
+    top: 64px;
+    left: 0;
+}
+
+.Actors .actorsList::-webkit-scrollbar{
+    display: none;
+}
+.Actors h2{
+    text-transform: capitalize;
+}
+
+.Actors .actorsList .list{
+    width: 165px;
+    height: 240px;
+    position: relative;
+}
+.Actors .actorsList  img{
+    height: 230px;
+    border-radius: 5px;
+
+}
+.Actors .actorsList .list p{
+    font-size: 17px;
+    transform: translatey(-5px);
+    font-weight: bold;
+    text-align: center;}
+    
+.Actors .actorsList .list p.name{
+    font-size: 19px;
+    font-weight: lighter;
+    color: #9999;
+    transform: translateY(-29px);
+}
+.Actors .Scroll{
+    width: 60px;
+    height: 40px;
+    background-color: black;
+    display: flex;
+    color: white;
+    position: absolute;
+    top: 70px;
+    right: 71px;
+    font-size: 32px;
+    /* border: 1px solid; */
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+}
+.Actors svg{
+    margin-right: 4px;
+    transition: 0.5s;
+    cursor: pointer;
+    font-size: 30px;
+    margin-top: -101px;
+}
+.Actors  svg.right{
+    position: absolute;
+    right: 60px;
+    top: 127px;
+    color: white;
+    font-size: 29px;
+    z-index: 5;
+}

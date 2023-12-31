@@ -1,0 +1,120 @@
+.Details{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 59px;
+    left: 0;
+
+}
+.Details img{
+    position: absolute;
+    height: 80%;
+    left: 15px;
+    top: 15px;
+    z-index: 10;
+    border-radius: 5px;
+}
+
+.Details .des{
+    width: 62%;
+    height: 81%;
+    position: absolute;
+    top: 0;
+    z-index: 20;
+    right: 20px;
+}
+.Details .des .title{
+    width: 100%;
+    height: 110px;
+    position: relative;
+    color: #555555;
+    top: 45px;}
+
+.Details .des .title h2{
+    position: absolute;
+    top: 0;
+    font-size: 27px;
+    color: white;
+}
+.Details .des .title p{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    font-weight: 500;
+    width: max-content;
+}
+.Details .des .title p::before{
+    position: absolute;
+    content: '';
+    /* display: flex; */
+    width: 1px;
+    height: 14px;
+    background-color: var(--main-color);
+    left: 40px;
+    top: 6px;
+}
+.Details .des .title .genres{
+    width: 418px;
+    position: absolute;
+    display: flex;
+    top: 54px; 
+    right: 0;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.Details .des .title .genres span.genere{
+    position: relative;
+    padding: 5px 11px;
+    border:1px dashed var(--main-color);
+    top: 0;
+    margin-right: 20px;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.Details .des .title .genres span.genere:hover{
+    background-color: var(--main-color);
+}
+.Details .des .title span{
+    position: absolute;
+    top: 66px;
+    left: 49px;
+    font-weight: 500;
+    width: max-content;
+}
+
+.Details .des .overView{
+    position: relative;
+    top: 54px;
+    color: white;}
+    
+.Details .des .overView p{
+    color: #999999;
+    font-size: 17px;
+    position: relative;
+    top: -20px;
+
+}
+
+.Details .des .table {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    top: 35px;
+    display: flex;
+    gap: 20px;}
+.Details .des .table .key p{
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.Details .des .table .value p{
+    text-transform: uppercase;
+    color: #999999;
+}
+
+.Details .des .table .value p span{
+    margin-right: 5px;
+}

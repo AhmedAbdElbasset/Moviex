@@ -1,0 +1,191 @@
+.poplurMovies{
+    height: 600px;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    top: 120px;
+    color: var(--main-color);
+    left: 20px;
+    overflow: hidden;
+    margin-bottom: 120px;
+}
+.poplurMovies .intro{
+    top: 20px;
+    position: relative;
+}
+
+.poplurMovies .intro h3{
+    position: absolute;
+    top: -13px;
+    color: white;
+    font-size: 36px;
+}
+.poplurMovies .Movies{
+    position: relative;
+    top: 100px;
+    width: 100%;
+    height: 380px;
+    display: flex;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+.poplurMovies .Scroll{
+    width: 60px;
+    height: 40px;
+    background-color: black;
+    display: flex;
+    color: white;
+    position: absolute;
+    top: 72px;
+    right: 31px;
+    /* border: 1px solid; */
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+}
+
+.poplurMovies svg{
+    margin-right: 4px;
+    transition: 0.5s;
+    cursor: pointer;
+    font-size: 30px;
+    margin-top: -101px;
+}
+
+
+/* .poplurMovies svg.right{
+    position: relative;
+    left: 3px;
+} */
+    
+.poplurMovies svg.right{
+    position: absolute;
+    right: 34px;
+    top: 164px;
+    color: white;
+}
+.poplurMovies svg:hover{
+    color: var(--main-color);
+}
+.poplurMovies .Movies::-webkit-scrollbar{
+    width: 5px;
+}
+.poplurMovies .Movies .box{
+    display: flex;
+    width: 375px;
+    height: 100%;
+    margin-right: 30px;
+    color: white;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.poplurMovies .Movies .box img{
+    width: 330px;
+    height: 310px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.poplurMovies .Movies .box img:hover{
+    scale: 1.06;
+}
+
+.poplurMovies .Movies .box p{
+    position: absolute;
+    bottom: 19px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.poplurMovies .Movies .box p.year{
+    bottom: 13px;
+    right: 1px;
+    padding: 4px;
+    font-size: 12px;
+    border-radius: 3px;
+    color: var(--main-color);
+}
+.poplurMovies .Movies .box p.rate{
+bottom: -9px;
+right: 5px;
+font-size: 12px;
+}
+
+.poplurMovies .Movies .box span{
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    border: 1px solid white;
+    color: var(--main-color);
+    padding: 1px 10px;
+    font-size: 14px;
+    font-weight: bolder;
+}
+/* Start Responsive */
+@media only screen and (max-width:766px){
+    .poplurMovies{
+        width: 95%;
+    }
+    .poplurMovies .Movies{
+        width: 95%;
+    }
+    .poplurMovies .intro h3{
+        font-size: 30px;
+        top: -6px;
+    }
+    .poplurMovies .Scroll {
+        top: 81px;
+    }
+    .poplurMovies svg{
+        font-size: 25px;
+    }
+    .poplurMovies svg.right{
+        top: 175px;}
+    .poplurMovies .Movies .box img{
+        width: 307px;}
+
+    }
+    @media only screen and (max-width:420px){
+        .poplurMovies{
+            width: 100%;
+            height: 400px;
+        
+        }
+        .poplurMovies .Movies .box{
+            height: 83%;
+        }
+        .poplurMovies .Movies .box img{
+            width: 204px;
+            height: 233px;
+        }
+        .poplurMovies .Movies .box p {
+            bottom: 32px;
+            font-size: 9px;
+        }
+        .poplurMovies .Movies .box p.year {
+            bottom: 22px;
+        
+        }
+        .poplurMovies .Movies .box span{
+            bottom: 8px;
+            font-size: 10px;
+        }
+        .poplurMovies .Movies .box p.rate {
+            bottom: 0px;
+            font-size: 10px;
+        }
+    }
+
+    @media only screen and (max-width:320px){
+        .poplurMovies {
+            width: 93%;
+            height: 480px;
+            overflow: hidden;
+        }
+    }
+    
+/* End Responsive */

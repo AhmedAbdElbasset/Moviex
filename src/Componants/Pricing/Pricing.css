@@ -1,0 +1,155 @@
+.PricingPage{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 59px;
+    left: 0;
+    padding-bottom: 100px;
+
+}
+
+.PricingPage .headline{
+text-align: center;
+color: var(--main-color);
+letter-spacing: 1px;
+font-size: 12px;
+font-weight: bold;
+text-transform: uppercase;
+
+}
+.PricingPage h3{
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    position: relative;
+    top: -35px;
+text-transform: capitalize;
+}
+.PricingPage h3::before{
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 4px;
+    background-color: var(--main-color);
+    top: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.PricingPage .plans{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.PricingPage .plans .box{
+    width: 300px;
+    height: 558px;
+    position: relative;
+    top: 60px;
+    background-color: var(--second-color);
+    border: 1px solid #070203;
+    border-radius: 10px;
+    transition: 0.3s;
+    margin-bottom   : 20px;
+}
+
+.PricingPage .plans .box:hover{
+    border: 1px solid var(--main-color);
+    box-shadow: 11px 11px 14px -14px var(--main-color);
+}
+
+
+.PricingPage .plans .box.standard{
+    transform: translateY(-25px);
+    border: 1px solid var(--main-color);
+}
+.PricingPage .plans .box h2{
+    text-transform: uppercase;
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+    top: 10px;
+}
+    
+.PricingPage .plans .box .color{
+    width: 130px;
+    height: 100px;
+    background-color: var(--main-color);
+    position: relative;
+    color: black;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.14), inset 0px 3px 7px 0px rgba(0, 0, 0, 0.31);
+}
+.PricingPage .plans .box .color p{
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+    top: 10px;}
+.PricingPage .plans .box .color span{
+    text-align: center;
+    position: relative;
+    left: 30%;
+    top: -25px;
+    font-size: 15px;
+    font-weight: bold;}
+    
+.PricingPage .plans .box .div{
+    display: flex;
+    position: relative;
+    width: 85%;
+    height: 40px;
+    top: 35px;
+    border-bottom: 1px solid gray;
+    padding-top: 10px;
+    left: 24px;
+}
+
+.PricingPage .plans .box .div svg{
+    position: relative;
+    top: 9px;
+    left: 20px;
+    font-size: 13px;}
+    
+.PricingPage .plans .box .div p{
+    position: relative;
+    top: -7px;
+    left: 32px;
+    font-size: 13px;
+    font-weight: bold;}
+    
+.PricingPage .plans .box .div span{
+    position: absolute;
+    right: 20px ;
+    top: 17px;
+    font-size: 13px;
+    font-weight: bold;
+
+}
+
+.PricingPage .plans .box  button{
+    position: relative;
+    top: 105px;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: capitalize;
+    border-radius: 33px;
+    padding: 11px 26px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: black;
+    border: 1px solid var(--main-color);
+transition: 0.3s;}
+    
+.PricingPage .plans .box  button:hover{
+    background-color: var(--main-color);
+}

@@ -1,0 +1,199 @@
+.Contact{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 59px;
+    padding-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.Contact h4{
+    font-size: 25px;
+    position: relative;}
+.Contact h4::before{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: var(--main-color);
+    top: 40px;
+
+}
+.Contact form .cont {
+    width: 80%;
+    padding: 26px;
+    border: 1px solid #313131;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+    
+.Contact form input {
+    width: 40%;
+    margin-right: 20px;
+    height: 34px;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    background-color: #1f1e24;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.46);
+    transition: 0.3s;
+}
+
+.Contact form input.Subject{
+    width: 88.3%;
+    border: none;
+    transition: 0.3s;
+
+}
+.Contact form textarea:focus,
+.Contact form input:focus{
+    outline: none;
+    border: 1px solid var(--main-color);
+}
+
+.Contact form textarea{
+    width: 89.3%;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    background-color: #1f1e24;
+    padding-top: 5px;
+    padding-left: 15px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.46);
+}
+
+.Contact form textarea::placeholder{
+    font-family: 'Dosis', sans-serif;
+    color: white;
+}
+.Contact form input::placeholder{
+    color: white;
+}
+.Contact form input:focus {
+    outline: none;
+}
+
+.Contact form button{
+    padding: 12px 18px 12px;
+    font-size: 13px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    border: 1px solid var(--main-color);
+    background-color: black;
+    transition: 0.3s;
+}
+
+.Contact form button:hover{
+    background-color: var(--main-color);
+}
+
+.Contact form button:focus{
+    background-color: var(--main-color);
+    outline: none;
+}
+
+.Contact .information {
+    margin-right: 30px;;
+}
+.Contact .information .cont{
+    width: 289px;
+    padding: 26px;
+    border: 1px solid #313131;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    left: -32px;
+    background-color: #070203
+
+}
+
+.Contact .information p{
+    font-size: 18px;
+    position: relative;
+    top: -10px;
+    color: #bcbcb7;
+}
+    
+.Contact .information p span{
+    font-weight: bold;
+    color: white;
+}
+.Contact .information .box{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    border-bottom: 1px solid gray;
+}
+.Contact .information .box:first-of-type{
+    margin-top: 0;
+}
+.Contact .information .box:last-of-type{
+    margin-bottom: 50px;
+}
+.Contact .information .box svg{
+    font-size: 21px;
+    position: relative;
+    top: 9px;
+    color: var(--main-color);
+}
+.Contact .information .box p{
+    font-size: 17px;
+    position: relative;
+    left: 7px;
+    font-weight: bold;
+    color: white;
+    margin-right: 15px;}
+.Contact .information .box span{
+    position: relative;
+    top: 9px;
+    left: 0;}
+    
+/* Start Responsive  */
+@media only screen and (min-width:768px) and (max-width: 1024px){
+    .Contact .information {
+        width: 80%;
+        position: relative;
+        left: 4%;
+    }
+    .Contact .information .cont{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:767px){
+    .Contact .information {
+        width: 80%;
+        position: relative;
+        left: 4%;
+    }
+    .Contact .information .cont{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 570px){
+    .Contact form input,
+    .Contact form input.Subject,
+    .Contact form textarea {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 370px){
+    .Contact form .cont{
+        width: 70%;}
+}
