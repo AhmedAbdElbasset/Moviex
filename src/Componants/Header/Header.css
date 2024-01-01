@@ -3,7 +3,7 @@
     height: 60px;
     position: fixed;
     display: flex;
-    z-index: 99999999;
+    z-index: 100;
     top: 0px;
     padding-top:3px ;
     background-color: black;
@@ -211,7 +211,7 @@
         .Head .bar .nav a:hover,
         .Head .bar .nav a.active{
             color: var(--main-color);
-            background-color: #060305;}
+            background-color: var(--second-color);}
         .Head .bar .contact{
             position: absolute;
             top: 50px;
@@ -221,7 +221,7 @@
         .Head .bar .contact input{
             display: block;
             width: 80%;
-            background-color: #060305;
+            background-color: var(--second-color);
             border: none;
             height: 40px;
             position: absolute;
@@ -323,7 +323,7 @@
         .Head .bar .nav a:hover,
         .Head .bar .nav a.active{
             color: var(--main-color);
-            background-color: #060305;}
+            background-color:var(--second-color);}
         .Head .bar .contact{
             position: absolute;
             top: 50px;
@@ -333,7 +333,7 @@
         .Head .bar .contact input{
             display: block;
             width: 80%;
-            background-color: #060305;
+            background-color: var(--second-color);
             border: none;
             height: 40px;
             position: absolute;

@@ -1,13 +1,15 @@
 .Details{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
     top: 59px;
     left: 0;
 
 }
 .Details img{
-    position: absolute;
+    position: relative;
     height: 80%;
     left: 15px;
     top: 15px;
@@ -17,3 +19,54 @@
 
 .Details .des .title span.end{
     left: 95px;}
+    @media only screen and (max-width:766px){
+        .Details{
+            width: 100%;
+        
+        }
+        .Details img{
+            width: 66%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .Details .des{
+            width: 80%;
+            padding-top: 59px;
+            padding-bottom: 59px;
+        }
+        .Details .des .title .genres span.genere{
+            font-size: 9px;}
+            .Details .des .title{
+                display: flex;
+                flex-wrap: wrap;
+                height: 100%;
+            }.Details .des .title span.end {
+                left: -18px;
+            }
+            .Details .des .title .genres{
+                position: relative;
+                padding-top: 10px;
+                padding-bottom: 50px;
+                top: 10px;
+                right: 71px;
+            
+
+            }
+            .Details .des .title h2{
+                position: relative;
+            }
+            .Details .des .title p {
+                position: relative;
+                left: -9%;
+            }
+            .Details .des .title span {
+                position: relative;
+                left: -25px;}            
+    }
+    
+    @media only screen and (max-width:570px){
+        
+        .Details .des .title .genres{
+            right: 2%;
+        }
+    }

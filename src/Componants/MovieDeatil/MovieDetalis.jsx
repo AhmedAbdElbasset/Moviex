@@ -38,8 +38,8 @@ function MovieDetail({url}) {
           <div className="des">
             <div className="title">
                 <h2>{movie.title}</h2>
-                <p>{(movie.release_date).slice(0,4)}</p>
-                <span>{timeConvert(movie.runtime)}</span>
+                <p className="movie">{(movie.release_date).slice(0,4)}</p>
+                <span className="movie">{timeConvert(movie.runtime)}</span>
                 <div className="genres">
                     {
                     movie.genres.map((genere)=>(
