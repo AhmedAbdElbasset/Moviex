@@ -1,0 +1,263 @@
+.Services{
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    background-color: var(--second-color);
+    position: relative;
+    top: 120px;
+    color: var(--main-color);
+    padding-left: 20px;
+    padding-top: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+.Services .left{
+    flex: 1;
+    display: flex;
+    width: 50%;
+    position: relative;
+    left: 20px;
+}
+
+.Services .left img.main{
+    height: 450px;
+    position: relative;
+    border: 20px solid var(--main-color);
+}
+
+.Services .left .download{
+    position: absolute;
+    bottom: 103px;
+    color: #070203;
+    width: 142px;
+    background-color: var(--main-color);
+    height: 31px;
+    right: -30px;
+    padding: 32px 65px;
+    letter-spacing: 7px;
+    transform: rotate(90deg);
+    text-transform: uppercase;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.Services .left .download p{
+    position: absolute;
+    top: 17px;
+}
+
+.Services .left .download img{
+    width: 27px;
+    position: absolute;
+    right: 31px;
+    transform: rotate(-90deg);
+}
+
+.Services .right{
+    flex: 1;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    position: relative;
+    /* top: 120px;
+    left: 55%; */
+    color: white;
+}
+.Services .right p{
+    width: 100%;
+    letter-spacing: 1px;
+    left: 18px;
+    position: relative;
+}
+.Services .right p.services::before{
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 3px;
+    background-color: var(--main-color);
+    left: -35px;
+    top: 11px;
+}
+.Services .right h3{
+    font-size: 47px;
+    position: absolute;
+    top: -9px;
+    left: -19px;
+    line-height: 50px;
+}
+
+.Services .right .prop{
+    width: 100%;
+    height: 175px;
+    position: absolute;
+    top: 170px;
+}
+.Services .right .prop div{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    position: relative;
+    margin-bottom: 50px;
+}
+.Services .right .prop div p{
+    left: 60px;
+    font-size: 23px;
+    font-weight: bold;}
+.Services .right .prop div svg{
+    position: absolute;
+    top: 31px;
+    font-size: 29px;
+}
+
+.Services .right .prop div::before{
+    position: absolute;
+    content: '';
+    width: 70px;
+    height: 70px;
+    top: 9px;
+    border-radius: 50%;
+    border: 1px dashed var(--main-color);
+    left: -20px;
+}
+
+.Services .right .prop div::before:hover{
+    background-color: var(--main-color);
+}
+/* Start Responsive */
+    @media only screen and (min-width:768px) and (max-width: 1024px){
+        .Services {
+            height: 200vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .Services .left{
+            width: 100%;
+            height: 105px;
+            overflow: hidden;
+        }
+        .Services .left .download{
+            right: 10%;
+            top: 306px;
+        }
+        
+        .Services .right {
+            width: 70%;
+            left: 22%;
+        }
+    }
+    @media only screen and (max-width: 766px){
+        .Services {
+            height: 200vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .Services .left{
+            width: 100%;
+            height: 105px;
+            overflow: hidden;
+        }
+        .Services .left img.main{
+            height: 60%;
+        }
+        .Services .left .download{
+            display: none;
+        }
+        
+        .Services .left .download img{
+            right: 20px;
+            top: 30px;
+        }
+        .Services .right {
+            width: 70%;
+            left: 22%;
+        }
+    }
+    
+    @media only screen and (max-width:420px){
+        .Services {
+            height: 150vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .Services .left{
+            width: 100%;
+            height: 105px;
+            overflow: hidden;
+        }
+        .Services .left img.main{
+            height: 55%;
+        
+        }
+        .Services .left .download p{
+            top: -2px;
+        }
+        
+        .Services .left .download img{
+            top: 10px;
+        }
+        .Services .right {
+            left: 19%;
+            top: -50px;
+        }
+        .Services .right h3 {
+            font-size: 30px;
+            padding-top: 22px;
+        
+        }
+
+    }
+
+
+    @media only screen and (max-width:320px){
+    .Services {
+        height: 150vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 5px;
+    }
+    .Services .left{
+        width: 100%;
+        height: 105px;
+        overflow: hidden;
+        left: 0;
+    }
+    .Services .left img.main{
+        height: 55%;
+    
+    }
+    .Services .right {
+        width: 100%;
+        left: 10px;
+        top: -50px;
+    }
+    .Services .right p{
+        left: 30px;
+    }
+    .Services .right h3 {
+        font-size: 28px;
+        padding-left: 10px;
+    
+    }
+    .Services .right .prop div::before {
+        position: absolute;
+        content: '';
+        width: 60px;
+        height: 60px;
+        top: 9px;
+        border-radius: 50%;
+        border: 1px dashed var(--main-color);
+        left: -11px;
+    }
+    .Services .right .prop div svg {
+        position: absolute;
+        top: 27px;
+        font-size: 25px;
+        left: 5px;
+    }
+    }
+/* End Responsive */

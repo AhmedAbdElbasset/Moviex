@@ -1,0 +1,82 @@
+.Details{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 59px;
+    left: 0;
+
+}
+.Details img{
+    position: absolute;
+    height: 80%;
+    left: 15px;
+    top: 15px;
+    z-index: 10;
+    border-radius: 5px;
+}
+
+.Details .des .title span.end{
+    left: 95px;}
+/* Start Responsive */
+@media only screen and (min-width:768px) and (max-width: 1024px){
+    .Details{
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .Details img{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .Details .des{
+        position: relative;
+        right: 0;
+        left: 20%;
+        margin-bottom: 150px;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .Details{
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .Details .des{
+        left: 50%;
+        transform: translateX(-50%);
+        width: 75%;
+        margin-bottom: 150px;
+        position: relative;
+    }
+    .Details img{
+        width: 70%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .Details .des .title .genres{
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        width: 60%;
+        gap: 8px;
+        top: 51%;
+    }
+    .Details .des .title .genres span.genere{
+        font-size: 8px;
+        margin-right: 10px;
+    }
+    .Details .des .title h2{
+        font-size: 15px;
+    }
+  }
+  
+@media only screen and (max-width:475px) {
+
+}
+
+/* End Responsive */

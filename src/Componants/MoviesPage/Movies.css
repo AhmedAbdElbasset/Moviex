@@ -1,0 +1,171 @@
+.movies{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 120px;
+    color: var(--main-color);
+    left: 0px;
+    overflow-x: hidden;
+    padding-top: 30px;
+    margin-bottom: 120px;
+    overflow: hidden;
+}
+.movies .headLine{
+    position: relative;
+    left: 5%;
+    color: var(--main-color);
+    top: -50px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.movies  h3{
+    font-size: 36px;
+    color: white;
+    position: absolute;
+    top: -16px;
+    left: 5%;
+}
+
+.movies .List{
+    padding-top: 50px;
+    position: relative;
+    top: 0;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    scroll-behavior: smooth;
+    gap: 50px;
+    left: 5%;
+    margin-bottom: 60px;
+}
+
+.movies .List .box{
+    width: 250px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 28px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+.movies .List .box:hover img{
+    transform: translatey(-50px);
+
+}
+.movies .List .box img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 28px;
+    transition: 0.3s;
+}
+.movies .List .box .detail{
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    background-color: var(--main-color);
+    z-index: -1;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.movies .List .box .detail p{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 22px;
+    font-weight: bold;
+}
+.pagination{
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    display: flex;
+    gap: 25px;
+    list-style-type: none;
+    color: var(--main-color);
+    cursor: pointer;
+}
+/* Start Responsive  */
+@media only screen and (min-width:768px) and (max-width: 1024px){
+    .movies{
+        padding-bottom: 110px;
+    }
+    .movies h3{
+        left: 42%;
+        transform: translateX(-50%);
+    }
+    .movies .headLine{
+        left: 42%;
+        transform: translateX(-50%);
+    }
+}
+
+@media only screen and (max-width:950px){
+    .movies{
+        padding-bottom: 110px;
+    }
+        .movies h3{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .movies .headLine{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .movies .List{    
+        width: 80%;
+        top: 100px;
+        left: 36%;
+        transform: translateX(-50%);
+    }
+    .movies .List .box{
+        width: 40%;    
+    }
+}
+@media only screen and (max-width: 766px){
+    .movies .List{    
+        left: 54%;
+        padding-top: 0;
+    }
+}
+
+@media only screen and (max-width: 570px){
+    .movies .List{    
+        left: 54%;
+    }
+    .movies h3 {
+        width: 63%;
+        font-size: 33px;
+    }
+    .movies .List .box {
+        width: 80%;
+        height: 500px;
+    }
+
+}
+@media only screen and (max-width:420px){
+    .movies .List{    
+        left: 54%;
+    }
+    .movies .List .box {
+        width: 97%;
+        height: 400px;
+    }
+    .movies h3 {
+        width: 70%;
+        font-size: 25px;
+        top: -3px;
+    }
+}
+
+/* End Responsive  */

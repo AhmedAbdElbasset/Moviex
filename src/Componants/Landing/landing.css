@@ -1,0 +1,138 @@
+.landing{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-image: url('../../assets/myke-simon-atsUqIm3wxo-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.landing::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: black;
+    opacity: 0.96;
+}
+
+.landing img{
+    position: absolute;
+    z-index: 10;
+    height: 500px;
+    right: 0;
+    bottom: -18px;
+
+}
+
+.landing .des{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    z-index: 5;
+}
+
+.landing .des .text{
+    position: relative;
+    height: 242px;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+    
+.landing .des .text h3{
+    font-size: 31px;
+    position: absolute;
+    top: -42px;
+    color: var(--main-color);
+}
+.landing .des .text p{
+    position: absolute;
+    top: -34px;
+    font-size: 66px;
+    font-weight: bold;}
+    
+.landing .des .text span{
+    color: var(--main-color);
+}
+
+.landing .des a{
+    background-color: black;
+    position: absolute;
+    bottom: 125px;
+    left: 15px;
+    border-radius: 30px;
+    border: 2px solid var(--main-color);
+    text-transform: uppercase;
+    transition: 0.3s;
+    font-weight: bold;
+    padding: 17px 44px;
+    color: white;
+}
+
+.landing .des a svg{
+    position: relative;
+    left: -9px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.landing .des a:hover {
+    background-color: var(--main-color);
+}
+/* Start Responsive */
+    @media only screen and (min-width:768px) and (max-width: 1024px){
+        .landing img{
+            display: none;
+        }
+        .landing .des{
+            width: 80%;
+        }
+    }
+    @media only screen and (max-width:767px){
+        .landing img{
+            display: none;
+        }
+        .landing .des{
+            width: 80%;
+        }
+        .landing .des .text p{
+            font-size: 38px;
+            display: block;
+            top: 16%;
+        }
+    }
+    @media only screen and (max-width:420px){
+        .landing{
+            height: 66vh;
+        }
+        .landing .des a{
+            transform: translateY(65px);
+        }
+        .landing .des .text h3{
+            top: -10px;
+        }
+    }
+    @media only screen and (max-width:320px){
+        .landing img{
+            display: none;
+        }
+        .landing .des{
+            width: 80%;
+        }
+        .landing .des .text p{
+            font-size: 28px;
+            display: block;
+            top: 16%;
+        }
+        .landing .des a{
+            font-size: 14px;
+            transform: translateY(50px);}
+    }
+/* End Responsive */

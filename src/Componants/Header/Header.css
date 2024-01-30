@@ -1,0 +1,433 @@
+.Head{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    display: flex;
+    z-index: 99999999;
+    top: 0px;
+    padding-top:3px ;
+    background-color: black;
+}
+.scrollButton{
+    position: absolute;
+    top: -200px;
+    right: 50px;
+    width: 45px;
+    height: 45px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    display: none;
+}
+.scrollButton svg{
+    font-size: 20px;
+    margin-left: -1px;
+}
+.Head .Logo{
+    width: 118px;
+    height: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+}
+
+.Head .Logo h1{
+    color: var(--main-color);
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+.Head .Logo h1:hover{
+    color: white;
+}
+
+.Head .bar{
+    width: 83%;
+}
+.Head .bar .nav{
+    display: flex;
+    width: 60%;
+    height: 100%;
+    margin-right: 40px;
+    left: 15%;
+    position: relative;
+    padding-top: 16px;
+    width: 100%;
+}
+
+.Head .bar .nav a{
+    text-transform: uppercase;
+    position: relative;
+    margin-right: 40px;
+    font-size: 19px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+
+}
+
+
+.Head .bar .nav a:hover,
+.Head .bar .nav a.active{
+    color: var(--main-color);
+}
+.Head .bar .contact{
+    width: 275px;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.Head .bar .contact select{
+    position: absolute;
+    left: 56px;
+    width: 60px;
+    height: 27px;
+    background-color: inherit;
+    border: navajowhite;
+    cursor: pointer;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.Head .bar .contact option{
+    background-color: black;
+    width: 60px;
+}
+
+.Head .bar .contact select:focus{
+    outline: none;
+}
+.Head .bar .contact svg{
+    width: 16px;
+    cursor: pointer;
+}
+
+.Head .bar .contact input{
+
+    display: none;
+}
+.Head .bar .contact svg:hover{
+    color: var(--main-color);
+}
+.Head .bar .contact button{
+    text-transform: uppercase;
+    width: 100px;
+    border-radius: 60px;
+    border: 2px solid var(--main-color);
+    transition: 0.3s;
+    position: absolute;
+    right: 20px;
+    background-color: black;
+}
+
+.Head .bar .contact button:hover{
+    background-color: var(--main-color);
+    color: white;
+}
+
+
+
+/* Start Responsive */
+@media only screen and (min-width:768px) and (max-width: 1024px){
+        
+    .Head{
+        width: 60%;
+        background-color: #d81c2b;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 560px;
+        border-radius: 8px;
+    }
+    .Head .Logo h1{
+        color: black;
+    }
+    .Head .toggle{
+        width: 75px;
+        height: 30px;
+        position: absolute;
+        right: 30px;
+        z-index: 101;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 22px;
+        gap: 2px;
+        cursor: pointer;
+    }
+    .Head .toggle span{
+        display: block;
+        width: 10px;
+        height: 10px;
+        background-color:black;
+        border-radius: 50%;
+        transition: 0.3s;
+    }
+    .Head .toggle.active span:first-of-type{
+        width: 3px;
+        height: 30px;
+        border-radius: 3px;
+        transform: rotate(-40deg);
+        position: relative;
+        left: 1px;
+    
+    }
+    .Head .toggle.active span:nth-of-type(2){
+        display: none;
+    }
+    .Head .toggle.active span:last-of-type{
+        width: 3px;
+        height: 30px;
+        border-radius: 3px;
+        transform: rotate(28deg);
+        position: relative;
+        left: -5px;
+    }
+    .Head .bar  {
+        width: 120%;
+        height:83vh ;
+        position: absolute;
+        background-color: black;
+        z-index: 100; 
+        right: -36px; 
+        transition: 1s;
+        top: -1089px;
+        border-radius: 8px;
+    }
+    .Head .bar.active{
+        width: 110%;
+        top: -545px;  
+        /* animation: headerAppear 10s 1; */
+    } 
+    .Head .bar .nav{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        top: 50px;
+        gap: 20px;
+        height: 58%;
+        left: 27px;
+    }
+    .Head .bar .nav a{
+        width: 89%;
+        padding: 15px 5px;
+        border-radius: 7px;
+    }
+    .Head .bar .nav a:hover,
+    .Head .bar .nav a.active{
+        color: var(--main-color);
+        background-color: #060305;}
+    .Head .bar .contact{
+        position: absolute;
+        top: 0px;
+        width: 95%;
+        height: 100px;
+    }
+    .Head .bar .contact input{
+        display: block;
+        width: 80%;
+        background-color: #060305;
+        border: none;
+        height: 40px;
+        position: absolute;
+        top: 19px;
+        border-radius: 5px;
+        left: 10px;
+        padding-left: 15px;}
+        
+    .Head .bar .contact input:focus{
+        outline: none;
+    }
+    .Head .bar .contact svg{
+        position: absolute;
+        top: 32px;
+        right: 85px;
+        z-index: 5;
+    }
+    .Head .bar .contact select{
+        position: absolute;
+        left: 88%;
+        top: 26px;
+    }
+    .Head .bar .contact button{
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 460%;
+    
+    }
+}
+@media only screen and (max-width:767px) {    
+    
+    .Head{
+        width: 60%;
+        background-color: #d81c2b;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 560px;
+        border-radius: 8px;
+    }
+    .Head .Logo h1{
+        color: black;
+    }    
+    .Head .toggle{
+        width: 75px;
+        height: 30px;
+        position: absolute;
+        right: 0px;
+        z-index: 101;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 22px;
+        gap: 2px;
+        cursor: pointer;
+    }
+    .Head .toggle span{
+        display: block;
+        width: 10px;
+        height: 10px;
+        background-color: black;
+        border-radius: 50%;
+        transition: 0.3s;
+    }
+    .Head .toggle.active span:first-of-type{
+        width: 3px;
+        height: 30px;
+        border-radius: 3px;
+        transform: rotate(-40deg);
+        position: relative;
+        left: 1px;
+    
+    }
+    .Head .toggle.active span:nth-of-type(2){
+        display: none;
+    }
+    .Head .toggle.active span:last-of-type{
+        width: 3px;
+        height: 30px;
+        border-radius: 3px;
+        transform: rotate(28deg);
+        position: relative;
+        left: -5px;
+    }
+    .Head .bar  {
+        width: 120%;
+        height:83vh ;
+        position: absolute;
+        background-color: black;
+        z-index: 100; 
+        right: -15px; 
+        transition: 1s;
+        top: -1089px;
+        border-radius: 8px;;
+    }
+    .Head .bar.active{
+        width: 120%;
+        top: -545px;  
+    } 
+    .Head .bar .nav{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        top: 50px;
+        gap: 20px;
+        height: 58%;
+        left: 27px;
+    }
+    .Head .bar .nav a{
+        width: 89%;
+        padding: 15px 5px;
+        border-radius: 7px;
+    }
+    .Head .bar .nav a:hover,
+    .Head .bar .nav a.active{
+        color: var(--main-color);
+        background-color: #060305;}
+    .Head .bar .contact{
+        position: absolute;
+        top: 0px;
+        width: 95%;
+        height: 100px;
+    }
+    .Head .bar .contact input{
+        display: block;
+        width: 80%;
+        background-color: #060305;
+        border: none;
+        height: 40px;
+        position: absolute;
+        top: 19\\px;
+        border-radius: 5px;
+        left: 10px;
+        padding-left: 15px;}
+        
+    .Head .bar .contact input:focus{
+        outline: none;
+    }
+    .Head .bar .contact svg{
+        position: absolute;
+        top: 39px;
+        right: 16%;
+        z-index: 5;
+    }
+    .Head .bar .contact select{
+        position: absolute;
+        left: 90%;
+        top: 39%;        
+        width: 48px;
+    }
+    .Head .bar .contact button{
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 450%;
+    
+    }
+    
+}
+
+@media only screen and (max-width:320px){
+    
+    .Head .toggle{
+        right: 5px;
+    }
+}
+
+/* End Responsive */
+
+/* Start Animation  */
+@keyframes headerAppear {
+0%{
+    width: 0;
+    right: -36px;
+    opacity: 0;
+    height: 0;
+    top: 0;
+    right: -36px;
+}
+30%{
+    opacity: 1;
+    width: 110%;
+    height: 20vh;
+    top: -545px;
+    right: -36px;      
+}
+100%{
+    width: 120%;
+    height: 100vh;
+    right: -36px;
+}
+}
+/* End Animation  */
