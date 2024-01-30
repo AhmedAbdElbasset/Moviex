@@ -37,7 +37,7 @@ function TopRated(){
                     <span className="hd">HD</span>
                   </div>))}
             </div>
-            <Link to={'/movies'}> browse all movies</Link>
+            <Link to={'/Moviex/movies'}> browse all movies</Link>
         </div>
     )
 }
