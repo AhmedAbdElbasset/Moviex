@@ -275,7 +275,7 @@
         background-color: #d81c2b;
         left: 50%;
         transform: translateX(-50%);
-        top: 560px;
+        top: 803px;
         border-radius: 8px;
     }
     .Head .Logo h1{
@@ -330,7 +330,7 @@
         z-index: 100; 
         right: -15px; 
         transition: 1s;
-        top: -1089px;
+        top: -1320px;
         border-radius: 8px;;
     }
     .Head .bar.active{
