@@ -26,7 +26,7 @@ function Similiar({onScroll,url,state}) {
               {Similiars === undefined
                   ? ``
                   : Similiars.results.map(movie=>(
-                  <Link to={`/movieDetalis/${movie.id}`} className="box" key={movie.id}>
+                  <Link to={`/Moviex/movieDetalis/${movie.id}`} className="box" key={movie.id}>
                       <div className="detail">
                       <p>Watch Now</p>
                       </div>
