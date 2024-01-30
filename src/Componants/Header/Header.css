@@ -330,12 +330,13 @@
         z-index: 100; 
         right: -15px; 
         transition: 1s;
-        top: -1726%;
+        top: -2546%;    
         border-radius: 8px;;
     }
     .Head .bar.active{
-        width: 120%;
-        top: -545px;  
+        width: 130%;
+        top: -1181%;
+        height: 521px;     
     } 
     .Head .bar .nav{
         position: relative;
@@ -385,8 +386,8 @@
     .Head .bar .contact select{
         position: absolute;
         left: 90%;
-        top: 39%;        
-        width: 48px;
+        top: 39%;
+        width: 40px;
     }
     .Head .bar .contact button{
         width: 80%;
