@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 import './App.css'
 import HomePage from './Pages/homePage'
 import { createBrowserRouter,RouterProvider } from 'react-router-dom'
@@ -8,7 +8,10 @@ import TvPage from './Pages/TvPage'
 import TvDetailsPage from './Pages/TvDetailsPage'
 import PricingPage from './Pages/PricingPage'
 import ContactsPage from './Pages/Contacts'
+import { motion,useScroll,useTransform } from "framer-motion";
 function App() {
+  const {scrollYProgress }=useScroll()
+  console.log(scrollYProgress )
 
   const router=createBrowserRouter([
     {path:'/Moviex',element:<HomePage/>},
@@ -20,9 +23,6 @@ function App() {
     {path:'/Moviex/Contact',element:<ContactsPage/>}
 
   ])
-  window.onscroll = function scroll (){
-    console.log(this.scrollY)
-}
   return (
     <>
     <RouterProvider router={router}/>

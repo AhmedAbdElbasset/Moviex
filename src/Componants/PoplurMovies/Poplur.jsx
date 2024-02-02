@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretLeft,faCaretRight } from "@fortawesome/free-solid-svg-icons";
+import { motion,useScroll,useTransform } from "framer-motion";
 import { Link } from "react-router-dom";
 import "./Poplur.css";
 
